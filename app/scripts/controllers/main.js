@@ -233,7 +233,7 @@ angular.module('diancanApp')
             });
     }
 
-        
+    //
     //第一次打印菜单询问
     setTimeout(function () {
         printAsk();
