@@ -1,0 +1,192 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+/* (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}*/
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/*common css*/
+.inline-b{display: inline-block;}
+.hidden-me{display: none;}
+.with-shadow{box-shadow: 0px 0px 10px 0px #000;}
+.fr{float: right;}
+.fl{float: left;}
+
+
+.login-page{height: 500px;padding-top: 20px;}
+.login-page form{width: 164px;margin: 0 auto;}
+.login-page .name{display: block;margin: 100px auto 20px;}
+.login-page .password{display: block;margin: 20px auto;}
+.login-page .tijiao{display: block;margin: 0 auto;}
+.background-w{width: 100%;padding: 0 5px;margin-top: 5px;}
+.jiezhang-modal{max-height: 450px;overflow: auto;margin-bottom: 20px;}
+.modal-content{padding: 7px;}
+/*/////////////////////////////////////*/
+.tables{
+    background-color: aquamarine;
+    border-radius: 2%;
+    height: 600px;
+
+    overflow-y: auto;
+    width: 64.9%;
+}
+.user-name{float: right;
+    line-height: 55px;
+    text-align: center;
+    min-width: 100px;
+    color: cadetblue;}
+.tables .panel-title{font-size: 32px;color: #105cb6;text-align: center;}
+.left-content{
+    background-color: #b2dba1;
+    border-radius: 2%;
+    height: 600px;
+
+    overflow: hidden;
+    width: 34.54%;
+    float: right;
+}
+.left-content ul li.themenu, .left-content ul li.message{width: 50%;}
+.left-content .background-w{overflow: auto;height: 547px;}
+.niv{line-height: 36px;margin-bottom: 10px;font-size: 18px;background-color: aquamarine;border-radius: 7px;}
+.niv ul li .btn{line-height: 44px;border: 0px;background-color: aquamarine;}
+.left-content .nav-tabs > li > a{margin: 0;}
+.table-item{position: relative;margin: 20px;cursor: pointer;color:#ffffff;font-size: 18px;width: 100px;height: 100px;text-align: center;line-height: 100px;background-color: #105cb6;border-radius: 50%;
+    float: left;
+
+}
+div.blue{background-color: #105cb6;box-shadow: 0px 0px 28px #007;}
+div.gray{background-color: gray;box-shadow: 0px 0px 28px #222;}
+
+.table-item .operation-btn{
+    top: 80px;
+    left: 19px;
+    font-size: 16px;
+    padding: 2px 14px;
+    position: absolute;
+    opacity: 1;}
+
+.table-item .table-name{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    line-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;}
+.table-item .remind-tab{position: absolute;
+    line-height: 28px;
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 32px;
+    top: -20px;
+    left: -28px;}
+.table-item .remind-tab .arrow{width: 8px;height: 8px;background-color: white;position: absolute;right: 2px;top: 33px;}
+
+.msg-show{
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    margin-left: -200px;
+    display: none;
+    width: 400px;
+    padding: 3px;
+    background-color: green;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: inset 0px 0px 23px #3f0;
+    font-size: 20px;
+}
+
+
+#uploat_pic input[type="file"]{font-size: 12px;margin: 20px 0;}
+#uploat_pic .show-pic{margin: 20px 0;}
+#uploat_pic .show-pic img{min-width: 400px;min-height: 200px;display: inline-block;}
+#uploat_pic .show-pic .btn-danger{margin-left: 10px;display: inline-block;}
+.dash-line{height: 1px;border-bottom: 1px dashed #333;margin: 10px 0;}
+
+#set_menu .menu-name, #set_tables .menu-name{width: 50%; margin: 10px 0;}
+#set_menu .menu-price{width: 30%;}
+#set_menu .tianjiafenzu, #set_tables .tianjiafenzu{width: 100%;}
+.set-tool-btn{position: fixed;right: 20px;top: 200px;}
+.set-tool-btn div{display: block;padding: 0;text-align: center;width: 60px; height: 60px;line-height: 60px;font-size: 20px;background-color: #ffffff;border: 1px solid #ccc;}
+.set-tool-btn .tianjia{color: #222222;}
+.set-tool-btn .xiugai{color: #222222;}
+.set-tool-btn .shanchu{color: #222222;}
+.set-tool-btn .baocun{color: #222222;}
+.set-tool-btn .quxiao{color: #222222;}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 768px) {
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    .tables{width: 100%}
+    .left-content{width: 100%;}
+}

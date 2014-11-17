@@ -1,0 +1,16 @@
+<!doctype html> <html class="no-js"> <head> <meta charset="utf-8"> <title></title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <link rel="shortcut icon" href="icon.jpg"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.20833e0b.css"> <link rel="stylesheet" href="styles/main.76d2c9d2.css">  <body ng-app="diancanApp"> <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--> <!-- Add your site or application content here --> <div class="container with-shadow" ng-controller="header-nav" id="my-outer"> <div class="niv clearfix with-shadow"> <h3 class="navbar-text" ng-click="print()">欢迎来到多益点后台！</h3> <ul class="nav nav-pills pull-left" ng-show="logined"> <li class="business-mng"><a ng-href="#/main">营业管理</a></li> <li class="setting-page"><a ng-href="#/about">设置页面</a></li> <li> <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"> 其它 <span class="caret"></span> </button> <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"> <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li> <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li> <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li> <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li> </ul> </li> <h4 class="page-title"></h4> </ul> <li class="inline-b user-name">{{$storage.name}}</li> <li class="inline-b re-fresh fr btn btn-info" ng-show="logined" ng-click="testconnect()">刷新连接</li> </div> <div ng-view=""></div> <div class="footer"> <p><span class="glyphicon glyphicon-heart"></span> from the colgar team</p> </div> <!--消息提示标签--> <div class="msg-show">{{message}}</div> <!--消息提示框--> <div class="modal fade bs-example-modal" id="askmsg-show" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"> <div class="modal-dialog modal-lg"> <div class="modal-content"> <div class="background-w jiezhang-modal"> <br> <br> 打印机停止打印，请检查打印机，<br> 确认无误后再操作！ <br> <br> </div> <button type="button" class="btn btn-info dayincaidan" data-dismiss="modal" ng-click="goAhead()">继续</button> </div> </div> </div> </div> <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');</script> <!--[if lt IE 9]>
+    <script src="scripts/oldieshim.a466b7b1.js"></script>
+    <![endif]--> <script src="scripts/vendor.e958f5a9.js"></script> <script src="scripts/scripts.c32f80b8.js"></script> <script type="text/javascript">function calledTest(msg){
+        var scope = angular.element($("#my-outer")).scope();
+        scope.safeApply(function(){
+            scope.printBackMsg(msg);
+        })
+    }</script>  
